@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+        url('../fonts/Livvic-SemiBold.woff') format('woff'),
+        url('../fonts/Livvic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
+        url('../fonts/Livvic-Bold.woff') format('woff'),
+        url('../fonts/Livvic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-BoldItalic.woff') format('woff'),
+        url('../fonts/Livvic-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-MediumItalic.woff') format('woff'),
+        url('../fonts/Livvic-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Regular.woff2') format('woff2'),
+        url('../fonts/Livvic-Regular.woff') format('woff'),
+        url('../fonts/Livvic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* MAIN */
+
+body {
+    padding-top: 50px;
+    background-color:#004047;
+}
+
+.row {
+    margin-bottom: 76px;
+}
+
+.item {
+    position: relative;
+    max-height: 253px;
+    margin-bottom: 76px;
+    padding: 32px 24px 56px;
+    border-radius: 4px;
+    background-color: #002529;
+    text-align: center;
+    border-left: 20px solid #004047;
+}
+
+
+.item__bottom {
+    position: absolute;
+    bottom: -25px;
+    left: 41%;
+}
+
+.item__hover {
+    display: none;
+}
+
+/* BOTTOM IMG */
+.item__bottom:active .item__bottom--img {
+    display: none;
+}
+
+.item__bottom:active .item__bottom--imgx {
+    display: inline-block;
+}
+
+.item__bottom--imgx {
+    display: none;
+}
+
+.heading {
+    color: #FFF;
+}
+
+.heading-4 {
+    margin: auto;
+    margin-bottom: 8px;
+    max-width: 302px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+}
+
+.heading5 {
+    margin: auto;
+    margin-bottom: 24px;
+    max-width: 302px;
+    font-family: Livvic;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.img__tvitter {
+    margin-right: 16px;
+}
+
+/* JS */
+
+.header__open .item__hover {
+    display: inline-block;
+}
+
+.header__open .item__top {
+    display: none;
+}
+
+.header__open .item__bottom--imgx {
+    display: inline-block;
+}
+
+.header__open .item__bottom--img {
+    display: none;
+}
