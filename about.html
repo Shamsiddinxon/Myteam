@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Execise 2</title>
+    <title>My team - about</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="container header__container">
-            <a href="#">
+            <a href="./home.html    ">
                 <img class="header__img" src="./images/myteam-logo.svg" alt="logo">
             </a>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#">home</a></li>
-                    <li class="header__item"><a class="header__link" href="#">about</a></li>
+                    <li class="header__item"><a class="header__link" href="./home.html">home</a></li>
+                    <li class="header__item"><a class="header__link" href="./about.html">about</a></li>
                 </ul>
-                <button class="header__btn header__btn1">contact us</button>
+                <a href="./creat.html" class="header__btn" target="blanc">contact us</a>
             </nav>
             <button class="header__hamburger"></button>
         </div>
@@ -240,25 +240,39 @@
 
 
     <!-- FOOTER -->
-    <footer>
-        <div class="container">
+    <footer class="footer">
+        <div class="container footer__container p-3">
 
+            <div class="footer__left-section">
+            <div class="footer__left">
+                <a href="#">
+                    <img class="footer__logo" src="./images/myteam-logo.svg" alt="footer-logo" width="160" height="40">
+                </a>
+                <ul class="footer__left-list">
+                    <li class="footer__left-item"><a class="footer__left-link" href="./home.html">home</a></li>
+                    <li class="footer__left-item"><a class="footer__left-link" href="#">about</a></li>
+                </ul>
+            </div>
+
+        <div class="footer__center">
+            <p class="footer__center-desc">987  Hillcrest Lane</p>
+            <p class="footer__center-desc">Irvine, CA</p>
+            <p class="footer__center-desc">California 92714</p>
+            <p class="footer__center-desc">Call Us : 949-833-7432</p>
+        </div>
+    </div>
+
+
+        <div class="footer__right">
+            <ul class="footer__right-list">
+                <li class="footer__right-item"><img class="footer__right-img" src="./images/facebook.svg" alt="meta"></li>
+                <li class="footer__right-item"><img class="footer__right-img" src="./images/meta.svg" alt="meta"></li>
+                <li class="footer__right-item"><img class="footer__right-img" src="./images/tvitter.svg" alt="meta"></li>
+            </ul>
+            <p class="footer__right-desc">Copyright 2020. All Rights Reserved</p>
+        </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
