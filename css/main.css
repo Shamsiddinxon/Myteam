@@ -1088,65 +1088,6 @@ body {
 
     }
 
-    /* Main-bottom */
-    /* .main-bottom {
-        background: #F67E7E;
-    }
-    .main-bottom__container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 76px 0px;
-        }
-
-        .main-bottom__heading {
-            margin: 0;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 48px;
-            color: #012F34;
-        }
-
-        .main-bottom__btn {
-            color: #012F34;
-            border: 2px solid #012F34;
-        }
-
-        .main-bottom__img {
-            position: absolute;
-            left: 0%;
-            bottom: 0%;
-        }
-
-
-    @media only screen and (max-width: 1200px) {
-        .main-bottom__container {
-                padding: 76px 98px;
-            }
-
-            .main-bottom__heading {
-                font-size: 32px;
-                line-height: 32px;
-            }
-    }
-
-    @media only screen and (max-width: 770px) {
-        .main-bottom__container {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                padding: 83px 24px;
-            }
-
-            .main-bottom__heading {
-                margin: 0 auto;
-                margin-bottom: 24px;
-            }
-    } */
-
-
-
     /* CONTACT======================== */
 
 
