@@ -94,10 +94,12 @@
 }
 
 .header__link:hover {
+    color: #fff;
     opacity: 0.8;
 }
 
 .header__link:active {
+    color: #0E8784;
     opacity: 0.6;
 }
 
@@ -181,7 +183,9 @@
 /* DIRECTORS====================================== */
 .directors {
     padding: 140px 0 0;
+    margin: 0;
     background-color:#004047;
+
 }
 
 .directors__item {
@@ -286,6 +290,51 @@
     bottom: 0%;
 }
 
+/* CLIENTS================================ */
+.clients {
+    margin: 0;
+    padding: 120px 0px 120px 40px;
+    background-color:#012F34;
+}
+
+.clients__heading {
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.clients__row {
+    justify-content: space-between;
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients__item:hover {
+    opacity: 0.7;
+}
+
+.clients__item:active {
+    color: #F67E7E;
+}
+
+
+
+.clients__img1 {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* JS */
 
 .header__open .item__hover {
@@ -310,6 +359,8 @@
         display: none;
     }
 }
+
+
 
 /* HEADER================================ */
 @media only screen and (max-width: 1000px) {
@@ -397,6 +448,8 @@
 
 /* MAIN-BOTTOM MEDIA============== */
 
+
+
 @media only screen and (max-width: 1200px) {
     .main-bottom__container {
         padding: 76px 100px;
@@ -405,6 +458,12 @@
     .main-bottom__heading {
         font-size: 32px;
         line-height: 32px;
+    }
+}
+
+@media only screen and (max-width:1046px) {
+    .clients__img {
+        max-width: 140px;
     }
 }
 
@@ -427,5 +486,32 @@
 
     .item__bottom {
         left: 44%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .clients {
+        padding: 120px 40px 120px 40px;
+    }
+
+  .clients__row {
+      /* max-width: 80%; */
+      align-items: center;
+      justify-content: center;
+  }
+
+  .clients__item {
+      width: 200px;
+      margin-bottom: 52px;
+  }
+
+  .clients__img {
+      max-width: 250px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+    .clients {
+        padding: 88px 40px 88px 40px;
     }
 }
