@@ -102,6 +102,8 @@
 }
 
 .header__btn {
+    margin: 0;
+    /* margin-left: 35px; */
     padding: 10px 32px;
     font-weight: 600;
     font-size: 18px;
@@ -130,18 +132,6 @@
     background-color: transparent;
     border: none;
 }
-
-@media only screen and (max-width: 1000px) {
-    .header {
-        position: relative;
-    }
-
-    .header__container {
-        padding: 64px 40px;
-    }
-}
-
-
 
 /* MAIN */
 
@@ -209,7 +199,7 @@
 .item__bottom {
     position: absolute;
     bottom: -25px;
-    left: 41%;
+    left: 43%;
 }
 
 .item__hover {
@@ -322,6 +312,16 @@
 }
 
 /* HEADER================================ */
+@media only screen and (max-width: 1000px) {
+    .header {
+        position: relative;
+    }
+
+    .header__container {
+        padding: 64px 0px;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .header {
         position: relative;
@@ -329,15 +329,24 @@
     }
     .header__container {
         justify-content: space-between;
-        padding: 48px 24px;
+        padding: 48px 25px;
+    }
+
+    .main-bottom, .directors, .about {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .header__nav {
         display: none;
     }
 
-    .header__item + header__item {
+    .header__item + .header__item {
         margin-left: 0;
+    }
+
+    .header__btn1x {
+        margin-left: 40px;
     }
 
     .header__hamburger {
@@ -347,18 +356,34 @@
 
     .header--open .header__nav {
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        margin-left: 0;
         position: absolute;
-        z-index: 1000;
+        top: 95px;
+        left: 10px;
+        right:10px;
+        padding: 0 0 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width :85%;
         width: 100%;
-        left: 0;
-        top: 100%;
-        background-color: #000;
+        margin: 0 auto;
+        background-image:url(../images/hamburger-bagcround.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        border: 1px solid #0E8784;
+        z-index: 1;
+    }
+
+    .header__open .header__item {
+        margin: 0;
+        margin: 4px;
     }
 
     .header--open .header__list {
         flex-direction: column;
+        text-align: center;
     }
 
     .header--open .header__btn {
@@ -394,5 +419,13 @@
     .main-bottom__heading {
         margin: 0 auto;
         margin-bottom: 24px;
+    }
+
+    .directors__item {
+        border-left:0;
+    }
+
+    .item__bottom {
+        left: 44%;
     }
 }
